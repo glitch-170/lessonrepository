@@ -149,5 +149,5 @@ gulp.task('watch', () => {
 
 gulp.task(
   'default',
-  gulp.series('clean', 'vendor', gulp.parallel('js', 'sass:minified', 'sass:expanded'), 'watch')
+  gulp.series(gulp.parallel('js', 'sass:expanded'))
 );
