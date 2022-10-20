@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm ci && gulp sass:expanded
+      - run: npm ci && gulp
       - name: Commit files
         id: commit
         run: |
