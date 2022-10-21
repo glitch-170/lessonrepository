@@ -16,12 +16,12 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci && gulp
+      - name: Setup GIT user
+        uses: fregante/setup-git-user@v1.1.0
       - name: Commit files
         id: commit
         shell: bash
         run: |
-          sudo git config --local user.email "action@github.com"
-          sudo git config --local user.name "github-actions"
           git add --all
           if [ -z "$(git status --porcelain)"]; then
             echo "::set-output name=push::false"
