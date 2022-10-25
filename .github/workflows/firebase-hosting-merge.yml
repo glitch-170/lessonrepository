@@ -16,25 +16,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci && gulp
-      - name: Setup GIT user
-        uses: fregante/setup-git-user@v1.1.0
-      - name: Commit files
-        id: commit
-        shell: bash
-        run: |
-          sudo git add --all
-          if [ -z "$(git status --porcelain)"]; then
-            echo "::set-output name=push::false"
-          else
-            sudo git commit -m "Add changes" -a
-            echo "::set-output name=push::true"
-          fi
-          sudo git config --system core.longpaths true
-      - name: Push changes
-        if: steps.commit.outputs.push == 'true'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
