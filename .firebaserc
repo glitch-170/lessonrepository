@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "lessonrepository-37415"
-  }
+  },
+  "targets": {
+    "lessonrepository-37415": {
+      "hosting": {
+        "lessonrepository-37415": [
+          "lessonrepository"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
