@@ -21,4 +21,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LESSONVAULT_7D91A }}'
           channelId: live
-          projectId: lessonvault-7d91a
+          projectId: lessonrepository-37415
