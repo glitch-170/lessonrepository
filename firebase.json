@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "public",
+    "target": "lessonrepository",
+    "public": "/",
     "ignore": [
       "firebase.json",
       "**/.*",

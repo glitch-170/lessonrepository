@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "lessonvault-7d91a"
-  }
+    "default": "lessonrepository-37415"
+  },
+  "targets": {
+    "lessonrepository-37415": {
+      "hosting": {
+        "lessonrepository": [
+          "lessonrepository"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
