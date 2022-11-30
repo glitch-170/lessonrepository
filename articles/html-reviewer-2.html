@@ -203,20 +203,11 @@
         <div class="row gy-4">
           <p>This is a basic HTML reviewer/worksheet.</p>
           
-          <ul class="nav nav-tabs flex-column" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" href="#worksheet" data-bs-toggle="tab" role="tab">
-                <i class="bx bx-home-alt opacity-70 me-2"></i>
-                Jump to worksheet
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#answerkey" data-bs-toggle="tab" role="tab">
-                <i class="bx bx-user opacity-70 me-2"></i>
-                Jump to answer key
-              </a>
-            </li>
-          </ul>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#worksheet">Jump to Worksheet</a>
+            <a class="dropdown-item" href="#answerkey">Jump to Worksheet Answer Key</a>
+          </div>
+          
           <div class="alert alert-primary mb-0" role="alert">
             <h4 class="pt-2 alert-heading">Note</h4>
             <button class="btn-close btn-close-white" type="button" data-bs-dismiss="alert" aria-label="Close"></button>
