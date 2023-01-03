@@ -22,7 +22,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.56.2"
+    "sass": "^1.57.1"
   },
   "dependencies": {
     "@lottiefiles/lottie-player": "^1.6.2",
