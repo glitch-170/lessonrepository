@@ -10,7 +10,7 @@
   "license": "ISC",
   "homepage": "https://silicon.createx.studio",
   "devDependencies": {
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.27.11",
     "del": "^7.0.0",
